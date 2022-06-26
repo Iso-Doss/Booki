@@ -8,8 +8,7 @@ html {
 
 body {
     font-family: 'Raleway', sans-serif;
-    width: 90%;
-    margin: auto;
+    margin: 0;
     scroll-behavior: smooth;
 }
 
@@ -20,7 +19,8 @@ header {
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    margin-top: 1%;
+    margin: 1% 5%;
+    width: 90%;
 }
 
 header div a img {
@@ -41,7 +41,7 @@ header nav ul {
 }*/
 
 header nav ul li a {
-    padding: 36px 15px 0;
+    padding: 30px 15px 0;
     text-decoration: none;
     color: black;
     font-size: 18px;
@@ -55,7 +55,8 @@ header nav ul li a:hover {
 /* MAIN */
 
 main {
-
+    width: 90%;
+    margin: auto;
 }
 
 main section {
@@ -140,7 +141,8 @@ main section:nth-child(1) div.booki-filtres {
 
 main section:nth-child(1) div.booki-filtres div.booki-filtres-container {
     display: flex;
-    height: 50px;
+    flex-wrap: wrap;
+    /*height: 50px;*/
 }
 
 main section:nth-child(1) div.booki-filtres h3 {
@@ -154,7 +156,7 @@ main section:nth-child(1) div.booki-filtres div.booki-filtres-container a.booki-
     display: flex;
     align-items: center;
     align-content: center;
-    margin: 0 2%;
+    margin: 0 2% 1%;
     width: 250px;
     text-decoration: none;
     color: black;
@@ -242,6 +244,8 @@ main section:nth-child(2) div.booki-hebergements div.booki-hebergements-cards a.
     padding: 1%;
     transition: transform .2s;
     margin-bottom: 4%;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+    border: none;
 }
 
 main section:nth-child(2) div.booki-hebergements div.booki-hebergements-cards a.booki-hebergement-card:hover {
@@ -269,17 +273,21 @@ main section:nth-child(2) div.booki-hebergements div.booki-hebergements-cards a.
     margin-block-end: 8px;
 }
 
-main section:nth-child(2) div.booki-hebergements div.booki-hebergements-cards a.booki-hebergement-card div.booki-hebergement-card-infos h3{
+main section:nth-child(2) div.booki-hebergements div.booki-hebergements-cards a.booki-hebergement-card div.booki-hebergement-card-infos h3 {
     font-size: 16px;
 }
 
-main section:nth-child(2) div.booki-hebergements div.booki-hebergements-cards a.booki-hebergement-card div.booki-hebergement-card-infos p{
+main section:nth-child(2) div.booki-hebergements div.booki-hebergements-cards a.booki-hebergement-card div.booki-hebergement-card-infos p {
     font-size: 14px;
 }
 
 main section:nth-child(2) div.booki-hebergements div.booki-hebergements-cards a.booki-hebergement-card div.booki-hebergement-card-infos p.booki-hebergement-card-infos-description span.booki-hebergement-card-infos-description-price.bold,
 main section:nth-child(2) div.booki-hebergements div.booki-hebergements-cards a.booki-hebergement-card div.booki-hebergement-card-infos p.booki-hebergement-card-infos-description span.booki-hebergement-card-infos-description-currency {
     font-weight: bold;
+}
+
+main section:nth-child(2) div.booki-hebergements div.booki-hebergements-cards a.booki-hebergement-card div.booki-hebergement-card-infos p.booki-hebergement-card-infos-description span.booki-hebergement-card-infos-description-currency {
+    margin-left: -4px;
 }
 
 main section:nth-child(2) div.booki-hebergements div.booki-hebergements-cards a.booki-hebergement-card div.booki-hebergement-card-infos p.booki-hebergement-card-infos-rate i.fa-solid.fa-star {
@@ -316,7 +324,7 @@ main section:nth-child(2) div.booki-plus-populaires {
     padding: 2%;
 }
 
-main section:nth-child(2) div.booki-plus-populaires h2{
+main section:nth-child(2) div.booki-plus-populaires h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -325,14 +333,14 @@ main section:nth-child(2) div.booki-plus-populaires h2{
     align-items: center;
 }
 
-main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-cards{
+main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-cards {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 1% 0;
 }
 
-main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-cards a.booki-plus-populaire-card{
+main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-cards a.booki-plus-populaire-card {
     display: flex;
     border-radius: 25px;
     text-decoration: none;
@@ -343,26 +351,28 @@ main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-ca
     width: 95%;
     margin: 2% auto;
     height: 170px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+    border: none;
 }
 
-main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-cards a.booki-plus-populaire-card:hover{
+main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-cards a.booki-plus-populaire-card:hover {
     transform: scale(1.1);
 }
 
-main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-cards a.booki-plus-populaire-card div.booki-plus-populaire-card-img{
+main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-cards a.booki-plus-populaire-card div.booki-plus-populaire-card-img {
     width: 150px;
     height: 100%;
     margin-right: 5%;
 }
 
-main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-cards a.booki-plus-populaire-card div.booki-plus-populaire-card-img img{
+main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-cards a.booki-plus-populaire-card div.booki-plus-populaire-card-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 25px 0 0 25px;
 }
 
-main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-cards a.booki-plus-populaire-card div.booki-plus-populaire-card-infos{
+main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-cards a.booki-plus-populaire-card div.booki-plus-populaire-card-infos {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -374,11 +384,11 @@ main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-ca
     margin-block-end: 8px;
 }
 
-main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-cards a.booki-plus-populaire-card div.booki-plus-populaire-card-infos h3{
+main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-cards a.booki-plus-populaire-card div.booki-plus-populaire-card-infos h3 {
     font-size: 16px;
 }
 
-main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-cards a.booki-plus-populaire-card div.booki-plus-populaire-card-infos p{
+main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-cards a.booki-plus-populaire-card div.booki-plus-populaire-card-infos p {
     font-size: 14px;
 }
 
@@ -387,10 +397,161 @@ main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-ca
     font-weight: bold;
 }
 
+main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-cards a.booki-plus-populaire-card div.booki-plus-populaire-card-infos p.booki-plus-populaire-card-infos-description span.booki-plus-populaire-card-infos-description-currency {
+    margin-left: -4px;
+}
+
 main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-cards a.booki-plus-populaire-card div.booki-plus-populaire-card-infos p.booki-plus-populaire-card-infos-rate i.fa-solid.fa-star {
     color: #F2F2F2;
 }
 
-main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-cards a.booki-plus-populaires-card div.booki-plus-populaires-card-infos p.booki-plus-populaires-card-infos-rate i.fa-solid.fa-star.score {
+main section:nth-child(2) div.booki-plus-populaires div.booki-plus-populaires-cards a.booki-plus-populaire-card div.booki-plus-populaire-card-infos p.booki-plus-populaire-card-infos-rate i.fa-solid.fa-star.score {
+    color: #0065FC;
+}
+
+/* THIRD SECTION - Activités à Marseille */
+
+main section:nth-child(3) {
+    margin: 5% 0;
+}
+
+main section:nth-child(3) div.booki-activites-cards {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-col {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row,
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row-1,
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row-2 {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+    border: none;
+    border-radius: 25px;
+    transition: transform .2s;
+    text-decoration: none;
+    color: black;
+}
+
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row:hover,
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row-1:hover,
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row-2:hover {
+    transform: scale(1.1);
+}
+
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row p,
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row-1 p,
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row-2 p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row .booki-activite-card-img {
+    width: 100%;
+    height: calc(100% - 70px);
+}
+
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row .booki-activite-card-infos {
+    width: 100%;
+    height: 70px;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+}
+
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row .booki-activite-card-img img {
+    border-radius: 25px 25px 0 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row-1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row-2 {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row-1 .booki-activite-card-img {
+    width: 100%;
+    height: calc(100% - 70px);
+}
+
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row-2 .booki-activite-card-img {
+    width: 100%;
+    height: calc(100% - 70px);
+}
+
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row-1 .booki-activite-card-infos,
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row-2 .booki-activite-card-infos {
+    width: 100%;
+    height: 70px;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+}
+
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row-1 .booki-activite-card-img img,
+main section:nth-child(3) div.booki-activites-cards .booki-activite-card-row-2 .booki-activite-card-img img {
+    border-radius: 25px 25px 0 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    width: 90%;
+    background-color: #F2F2F2;
+    display: flex;
+    padding: 1% 5%;
+}
+
+footer .footer-col {
+    margin-right: 15%;
+}
+
+footer .footer-col ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+footer .footer-col ul li {
+    list-style-type: none;
+    margin-bottom: 1em;
+}
+
+footer .footer-col ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer .footer-col ul li a:hover {
+    text-decoration: underline;
     color: #0065FC;
 }
