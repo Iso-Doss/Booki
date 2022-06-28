@@ -56,7 +56,7 @@ main {
 }
 
 main section {
-    margin: 2% 0;
+    margin: 5% 0;
 }
 
 /* FIRST SECTION */
@@ -149,7 +149,8 @@ main section {
     align-items: center;
     align-content: center;
     margin: 1% 2%;
-    width: 250px;
+    /*width: 250px;*/
+    padding-right: 2%;
     text-decoration: none;
     color: black;
     border: 3px solid #F2F2F2;
@@ -410,7 +411,7 @@ main section:nth-child(3) {
 }
 
 .booki-activite-card-col {
-    width: 22%;
+    width: calc((100% - 6%) / 4);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -517,7 +518,7 @@ footer {
 }
 
 footer .footer-col {
-    margin-right: 15%;
+    margin-right: 10%;
 }
 
 footer .footer-col ul {
@@ -545,380 +546,21 @@ footer .footer-col ul li a:hover {
 
 /* TABLETTE VERSION */
 @media screen and (max-width: 992px) and (min-width: 768px) {
-    /* HEADER */
-    .booki-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        margin: 1% 5%;
-        width: 90%;
-    }
-
-    .booki-logo {
-        width: 50%;
-    }
-
-    .booki-menu {
-        display: flex;
-    }
-
-    .booki-menu ul {
-        display: flex;
-        list-style-type: none;
-    }
-
-    .booki-menu ul li a {
-        padding: 30px 15px 0;
-        text-decoration: none;
-        color: black;
-        font-size: 18px;
-    }
-
-    .booki-menu ul li a:hover {
-        color: #0065FC;
-        border-top: solid 5px #0065FC;
-    }
-
-    /* MAIN */
-    main {
-        width: 90%;
-        margin: auto;
-    }
-
-    main section {
-        margin: 2% 0;
-    }
-
-    /* FIRST SECTION */
-    /* FORM */
-    .booki-search-form {
-        display: flex;
-        margin: 2% 0;
-    }
-
-    .booki-search-form i.fa-solid.fa-location-dot {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 15px 0 0 15px;
-        height: 50px;
-        width: 50px;
-        background: #F2F2F2;
-    }
-
-    .booki-search-form input[type=text] {
-        color: black;
-        font-weight: bold;
-        font-size: 20px;
-        padding-left: 10px;
-        border-top: 1px solid #F2F2F2;
-        border-bottom: 1px solid #F2F2F2;
-        border-left: 0;
-        border-right: 0;
-    }
-
-    .booki-search-form input[type=text]::placeholder {
-        color: black;
-        font-weight: bold;
-    }
-
-    .booki-search-form input[type=text]:focus-visible {
-        outline: 2px solid #0065FC;
-    }
-
-    .booki-search-form button[type=submit] {
-        background: #0065FC;
-        color: white;
-        font-weight: bold;
-        border: none;
-        border-radius: 0 15px 15px 0;
-        cursor: pointer;
-        font-size: 20px;
-        padding: 0 15px;
-        transition: transform .2s;
-    }
-
-    .booki-search-form button[type=submit]:hover {
-        background: #F2F2F2;
-        color: black;
-        transform: scale(1.1);
-    }
-
-    .booki-search-form button[type=submit]:after {
-        content: "Rechercher"
-    }
-
-    /* FILTRES */
-    .booki-filtres {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
-        width: 100%;
-        margin: 2% 0;
-    }
-
-    .booki-filtres-container {
-        display: flex;
-        flex-wrap: wrap;
-        width: 90%;
-    }
-
-    .booki-filtres h3 {
-        margin-block-start: 0;
-        margin-block-end: 0;
-        margin-inline-start: 0;
-        margin-inline-end: 0;
-    }
-
-    .booki-filtre {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        margin: 1% 2%;
-        width: 250px;
-        text-decoration: none;
-        color: black;
-        border: 3px solid #F2F2F2;
-        border-radius: 30px;
-        transition: transform .2s;
-    }
-
-    .booki-filtre:hover {
-        background: #0065FC;
-        color: white;
-        border: 2px solid #0065FC;
-        transform: scale(1.1);
-    }
-
-    .booki-filtre i.fa-solid {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        height: 50px;
-        width: 50px;
-        background: #DEEBFF;
-        border-radius: 30px;
-        color: #0065FC;
-        margin-left: -5px;
-    }
-
-    .booki-filtre p {
-        margin: 0 auto 0 10px;
-        font-weight: bold;
-    }
-
-    .booki-info {
-        display: flex;
-        align-items: center;
-    }
-
-    .booki-info i.fa-solid.fa-info {
-        font-weight: 900;
-        height: 30px;
-        width: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid #F2F2F2;
-        border-radius: 25px;
-        margin-right: 1%;
-        color: #0065FC;
-    }
 
     /* SECOND SECTION */
     main section:nth-child(2) {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     /* SECOND SECTION - Hébergements à Marseille */
     .booki-hebergements {
-        width: 65%;
-        background-color: #F2F2F2;
-        border-radius: 25px;
-        padding: 2%;
-    }
-
-    .booki-hebergements-cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-        margin: 2% 0;
-    }
-
-    .booki-hebergement-card {
-        display: flex;
-        flex-direction: column;
-        width: 29%;
-        border-radius: 25px;
-        text-decoration: none;
-        color: black;
-        background-color: white;
-        padding: 1%;
-        transition: transform .2s;
-        margin-bottom: 4%;
-        box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
-        border: none;
-    }
-
-    .booki-hebergement-card:hover {
-        transform: scale(1.1);
-    }
-
-    .booki-hebergement-card-img {
-        width: 100%;
-    }
-
-    .booki-hebergement-card-img img {
-        width: 100%;
-        height: 130px;
-        object-fit: cover;
-        border-radius: 25px 25px 0 0;
-    }
-
-    .booki-hebergement-card-infos {
-        margin-left: 5%;
-    }
-
-    .booki-hebergement-card-infos h3,
-    .booki-hebergement-card-infos p {
-        margin-block-start: 8px;
-        margin-block-end: 8px;
-    }
-
-    .booki-hebergement-card-infos h3 {
-        font-size: 16px;
-    }
-
-    .booki-hebergement-card-infos p {
-        font-size: 14px;
-    }
-
-    .booki-hebergement-card-infos-description-price.bold,
-    .booki-hebergement-card-infos-description-currency {
-        font-weight: bold;
-    }
-
-    .booki-hebergement-card-infos-description-currency {
-        margin-left: -4px;
-    }
-
-    .booki-hebergement-card-infos-rate i.fa-solid.fa-star {
-        color: #F2F2F2;
-    }
-
-    .booki-hebergement-card-infos-rate i.fa-solid.fa-star.score {
-        color: #0065FC;
-    }
-
-    .booki-hebergements-show-more {
-        color: black;
-        font-weight: bold;
-        text-decoration: none;
-        font-size: 18px;
-    }
-
-    .booki-hebergements-show-more:hover {
-        color: #0065FC;
-        text-decoration: underline;
-        transition: .3s;
+        width: 98%;
     }
 
     /* SECOND SECTION - Les plus populaires */
     .booki-plus-populaires {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 26%;
-        background-color: #F2F2F2;
-        border-radius: 25px;
-        padding: 2%;
-    }
-
-    .booki-plus-populaires h2 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .booki-plus-populaires-cards {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 1% 0;
-    }
-
-    .booki-plus-populaire-card {
-        display: flex;
-        border-radius: 25px;
-        text-decoration: none;
-        color: black;
-        background-color: white;
-        padding: 2%;
-        transition: transform .2s;
-        width: 95%;
-        margin: 2% auto;
-        height: 170px;
-        box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
-        border: none;
-    }
-
-    .booki-plus-populaire-card:hover {
-        transform: scale(1.1);
-    }
-
-    .booki-plus-populaire-card-img {
-        width: 150px;
-        height: 100%;
-        margin-right: 5%;
-    }
-
-    .booki-plus-populaire-card-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 25px 0 0 25px;
-    }
-
-    .booki-plus-populaire-card-infos {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .booki-plus-populaire-card-infos h3 {
-        margin-block-start: 8px;
-        margin-block-end: 8px;
-    }
-
-    .booki-plus-populaire-card-infos h3 {
-        font-size: 16px;
-    }
-
-    .booki-plus-populaire-card-infos-description-price.bold,
-    .booki-plus-populaire-card-infos-description-currency {
-        font-weight: bold;
-    }
-
-    .booki-plus-populaire-card-infos-description-currency {
-        margin-left: -4px;
-    }
-
-    .booki-plus-populaire-card-infos-rate i.fa-solid.fa-star {
-        color: #F2F2F2;
-    }
-
-    .booki-plus-populaire-card-infos-rate i.fa-solid.fa-star.score {
-        color: #0065FC;
+        width: 98%;
+        margin-top: 5%;
     }
 
     /* THIRD SECTION - Activités à Marseille */
@@ -928,147 +570,178 @@ footer .footer-col ul li a:hover {
 
     .booki-activites-cards {
         width: 100%;
-        height: 500px;
+        height: auto;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
     .booki-activite-card-col {
-        width: 22%;
+        width: calc((100% - 6%) / 2);
+        height: 500px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }
-
-    .booki-activite-card-row {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .booki-activite-card-row,
-    .booki-activite-card-row-1,
-    .booki-activite-card-row-2 {
-        box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
-        border: none;
-        border-radius: 25px;
-        transition: transform .2s;
-        text-decoration: none;
-        color: black;
-    }
-
-    .booki-activite-card-row:hover,
-    .booki-activite-card-row-1:hover,
-    .booki-activite-card-row-2:hover {
-        transform: scale(1.1);
-    }
-
-    .booki-activite-card-row p,
-    .booki-activite-card-row-1 p,
-    .booki-activite-card-row-2 p {
-        font-size: 18px;
-        font-weight: bold;
-    }
-
-    .booki-activite-card-img {
-        width: 100%;
-        height: calc(100% - 70px);
-    }
-
-    .booki-activite-card-infos {
-        width: 100%;
-        height: 70px;
-        margin-left: 5%;
-        display: flex;
-        align-items: center;
-    }
-
-    .booki-activite-card-img img {
-        border-radius: 25px 25px 0 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-
-    .booki-activite-card-row-1 {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .booki-activite-card-row-2 {
-        width: 100%;
-        height: 40%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .booki-activite-card-row-1 .booki-activite-card-img {
-        width: 100%;
-        height: calc(100% - 70px);
-    }
-
-    .booki-activite-card-row-2 .booki-activite-card-img {
-        width: 100%;
-        height: calc(100% - 70px);
-    }
-
-    .booki-activite-card-row-1 .booki-activite-card-infos,
-    .booki-activite-card-row-2 .booki-activite-card-infos {
-        width: 100%;
-        height: 70px;
-        margin-left: 5%;
-        display: flex;
-        align-items: center;
-    }
-
-    .booki-activite-card-row-1 .booki-activite-card-img img,
-    .booki-activite-card-row-2 .booki-activite-card-img img {
-        border-radius: 25px 25px 0 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        margin-bottom: 5%;
     }
 
     footer {
-        width: 90%;
-        background-color: #F2F2F2;
-        display: flex;
-        padding: 1% 5%;
+        flex-wrap: wrap;
     }
 
-    footer .footer-col {
-        margin-right: 15%;
-    }
-
-    footer .footer-col ul {
-        margin-block-start: 0;
-        margin-block-end: 0;
-        margin-inline-start: 0;
-        margin-inline-end: 0;
-        padding-inline-start: 0;
-    }
-
-    footer .footer-col ul li {
-        list-style-type: none;
-        margin-bottom: 1em;
-    }
-
-    footer .footer-col ul li a {
-        text-decoration: none;
-        color: black;
-    }
-
-    footer .footer-col ul li a:hover {
-        text-decoration: underline;
-        color: #0065FC;
-    }
 }
 
 /* MOBILE VERSION */
-@media screen and  (max-width: 768px) and (min-width: 375px) {
+@media screen and  (max-width: 768px) {
+
+    /* HEADER */
+    .booki-header {
+        flex-direction: column;
+        margin: 2% 0;
+        width: 100%;
+    }
+
+    .booki-logo-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .booki-logo-link {
+        display: flex;
+        justify-content: center;
+    }
+
+    .booki-menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .booki-menu ul {
+        width: 100%;
+        display: flex;
+        list-style-type: none;
+        padding-inline-start: 0;
+    }
+
+    .booki-menu ul li {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .booki-menu ul li a {
+        width: 100%;
+        text-align: center;
+        padding: 0 0 5% 0;
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        border-bottom: solid 5px #f2f2f2;
+    }
+
+    .booki-menu ul li a:hover {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: solid 5px #0065FC;
+    }
+
+    /* MAIN */
+    main {
+        width: 100%;
+        margin: auto;
+    }
+
+    main section {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* FIRST SECTION */
+    main section:nth-child(1) {
+        width: 90%;
+        padding: 0 5%;
+    }
+
+    .booki-search-form {
+        justify-content: center;
+    }
+
+    .booki-search-form input[type=text] {
+        font-size: 16px;
+    }
+
+    .booki-search-form button[type=submit]:after {
+        font-family: "Font Awesome 6 Free";
+        content: "\f002";
+    }
+
+    /* SECOND SECTION */
+    main section:nth-child(2) {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    /* SECOND SECTION - Hébergements à Marseille */
+    .booki-hebergements {
+        width: 90%;
+        margin: 5% 0 0;
+        padding: 0 5%;
+        background-color: white;
+        border-radius: 0;
+    }
+
+    .booki-hebergement-card {
+        width: 100%;
+    }
+
+    /* SECOND SECTION - Les plus populaires */
+    .booki-plus-populaires {
+        width: 90%;
+        margin: 5% 0 0;
+        padding: 0 5%;
+        background-color: #F2F2F2;
+        border-radius: 0;
+
+    }
+
+    /* THIRD SECTION - Activités à Marseille */
+    main section:nth-child(3) {
+        width: 90%;
+        margin: 5% 0 0;
+        padding: 0 5%;
+    }
+
+    .booki-activites-cards {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .booki-activite-card-col {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 5%;
+    }
+
+    .booki-activite-card-row, .booki-activite-card-row-1, .booki-activite-card-row-2 {
+        height: 300px;
+    }
+
+    .booki-activite-card-row-1, .booki-activite-card-row-2 {
+        margin-bottom: 5%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
 
 }
