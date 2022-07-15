@@ -72,9 +72,9 @@ main section {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 15px 0 0 15px;
-    height: 50px;
-    width: 50px;
+    border-radius: 25px 0 0 25px;
+    height: 70px;
+    width: 70px;
     background: #F2F2F2;
 }
 
@@ -103,17 +103,17 @@ main section {
     color: white;
     font-weight: bold;
     border: none;
-    border-radius: 0 15px 15px 0;
+    border-radius: 0 25px 25px 0;
     cursor: pointer;
     font-size: 20px;
-    padding: 0 15px;
-    transition: transform .2s;
+    padding: 0 25px;
+    transition: transform .5s;
 }
 
 .booki-search-form button[type=submit]:hover {
     background: #F2F2F2;
     color: black;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .booki-search-form button[type=submit]:after {
@@ -155,14 +155,15 @@ main section {
     color: black;
     border: 3px solid #F2F2F2;
     border-radius: 30px;
-    transition: transform .2s;
+    transition: transform .5s;
+    height: 50px;
 }
 
 .booki-filtre:hover {
     background: #0065FC;
     color: white;
     border: 2px solid #0065FC;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .booki-filtre i.fa-solid {
@@ -170,8 +171,8 @@ main section {
     align-items: center;
     align-content: center;
     justify-content: center;
-    height: 50px;
-    width: 50px;
+    height: 56px;
+    width: 56px;
     background: #DEEBFF;
     border-radius: 30px;
     color: #0065FC;
@@ -235,14 +236,14 @@ main section:nth-child(2) {
     color: black;
     background-color: white;
     padding: 1%;
-    transition: transform .2s;
+    transition: transform .5s;
     margin-bottom: 4%;
     box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
     border: none;
 }
 
 .booki-hebergement-card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .booki-hebergement-card-img {
@@ -296,6 +297,7 @@ main section:nth-child(2) {
     font-weight: bold;
     text-decoration: none;
     font-size: 18px;
+    letter-spacing: 0.3px;
 }
 
 .booki-hebergements-show-more:hover {
@@ -340,7 +342,7 @@ main section:nth-child(2) {
     color: black;
     background-color: white;
     padding: 2%;
-    transition: transform .2s;
+    transition: transform .5s;
     width: 95%;
     margin: 2% auto;
     height: 170px;
@@ -349,7 +351,7 @@ main section:nth-child(2) {
 }
 
 .booki-plus-populaire-card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .booki-plus-populaire-card-img {
@@ -430,7 +432,7 @@ main section:nth-child(3) {
     box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
     border: none;
     border-radius: 25px;
-    transition: transform .2s;
+    transition: transform .5s;
     text-decoration: none;
     color: black;
 }
@@ -438,7 +440,7 @@ main section:nth-child(3) {
 .booki-activite-card-row:hover,
 .booki-activite-card-row-1:hover,
 .booki-activite-card-row-2:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .booki-activite-card-row p,
@@ -546,6 +548,10 @@ footer .footer-col ul li a:hover {
 
 /* TABLETTE VERSION */
 @media screen and (max-width: 992px) and (min-width: 768px) {
+
+    .booki-filtres h3{
+        width: 100%;
+    }
 
     /* SECOND SECTION */
     main section:nth-child(2) {
@@ -666,17 +672,26 @@ footer .footer-col ul li a:hover {
         padding: 0 5%;
     }
 
-    .booki-search-form {
-        justify-content: center;
-    }
+    /*.booki-search-form {*/
+    /*    justify-content: center;*/
+    /*}*/
 
     .booki-search-form input[type=text] {
         font-size: 16px;
     }
 
+    .booki-search-form button[type=submit]{
+        border-radius: 25px;
+        margin-left: -20px
+    }
+
     .booki-search-form button[type=submit]:after {
         font-family: "Font Awesome 6 Free";
         content: "\f002";
+    }
+
+    .booki-filtres h3{
+        width: 100%;
     }
 
     /* SECOND SECTION */
