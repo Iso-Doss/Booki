@@ -55,7 +55,7 @@ body {
 }
 
 .booki-menu ul li a {
-    padding: 30px 15px 0;
+    padding: 35px 15px 0;
     text-decoration: none;
     color: black;
     font-size: 18px;
@@ -514,13 +514,14 @@ main section:nth-child(2) {
 }
 
 .booki-plus-populaire-card-img {
-    width: 150px;
+    max-width: 150px;
+    min-width: 100px;
     height: 100%;
     margin-right: 5%;
 }
 
 .booki-plus-populaire-card-img img {
-    width: 100%;
+    width: 150px;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
@@ -528,6 +529,7 @@ main section:nth-child(2) {
 }
 
 .booki-plus-populaire-card-infos {
+    width: calc(100% - 150px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -932,6 +934,11 @@ footer .footer-col ul li a:hover {
     /*.booki-search-form {*/
     /*    justify-content: center;*/
     /*}*/
+    .booki-search-form i.fa-solid.fa-location-dot {
+        height: 60px;
+        width: 60px;
+    }
+
     .booki-search-form input[type=text] {
         font-size: 16px;
     }
@@ -1019,7 +1026,7 @@ footer .footer-col ul li a:hover {
     }
 
     .booki-activite-card-row, .booki-activite-card-row-1, .booki-activite-card-row-2 {
-        height: 300px;
+        height: 200px;
     }
 
     .booki-activite-card-row-1, .booki-activite-card-row-2 {
@@ -1033,4 +1040,19 @@ footer .footer-col ul li a:hover {
         flex-direction: column;
     }
 
+}
+
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
 }
