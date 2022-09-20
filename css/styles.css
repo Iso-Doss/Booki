@@ -336,7 +336,7 @@ main section:nth-child(2) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 1% 0;
+    /*margin: 1% 0;*/
 }
 
 .booki-plus-populaire-card {
@@ -348,8 +348,8 @@ main section:nth-child(2) {
     padding: 2%;
     transition: transform .5s;
     width: 95%;
-    margin: 2% auto;
-    height: 170px;
+    margin-bottom: 3%;
+    height: 200px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
     border: none;
 }
@@ -359,21 +359,21 @@ main section:nth-child(2) {
 }
 
 .booki-plus-populaire-card-img {
-    max-width: 150px;
-    min-width: 100px;
+    /*max-width: 150px;*/
+    /*min-width: 100px;*/
     height: 100%;
-    margin-right: 5%;
+    margin-right: 10px;
 }
 
 .booki-plus-populaire-card-img img {
-    width: 150px;
+    width: 120px;
     height: 100%;
     object-fit: cover;
     border-radius: 25px 0 0 25px;
 }
 
 .booki-plus-populaire-card-infos {
-    width: calc(100% - 150px);
+    width: calc(100% - 120px);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -539,7 +539,7 @@ footer .footer-col ul {
 
 footer .footer-col ul li {
     list-style-type: none;
-    margin-bottom: 1em;
+    margin-bottom: 16px;
 }
 
 footer .footer-col ul li a {
